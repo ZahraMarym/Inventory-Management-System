@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.DashboardController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="664.0" prefWidth="787.0" style="-fx-background-color: #20034d;">
+         <children>
+            <BarChart fx:id="barChart" layoutX="41.0" layoutY="356.0" opacity="0.85" prefHeight="305.0" prefWidth="618.0" style="-fx-background-color: white; -fx-alternative-column-fill-visible: ;" title="Statistics">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Label fx:id="TOTALPURCHASE" layoutX="14.0" layoutY="14.0" opacity="0.44" prefHeight="97.0" prefWidth="151.0" style="-fx-background-color: #1c63b8;" text="    TOTAL PURCHASE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="TOTALSALES" layoutX="228.0" layoutY="14.0" opacity="0.47" prefHeight="97.0" prefWidth="151.0" style="-fx-background-color: #000425;" text="          TOTAL SALES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="TOTALPROFIT" layoutX="440.0" layoutY="14.0" opacity="0.5" prefHeight="97.0" prefWidth="151.0" style="-fx-background-color: #411fb2;" text="         TOTAL PROFIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="CUSTOMERS" layoutX="14.0" layoutY="158.0" opacity="0.48" prefHeight="97.0" prefWidth="151.0" style="-fx-background-color: #0013e1;" text="         CUSTOMERS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="SALESINVOICES" layoutX="228.0" layoutY="158.0" opacity="0.53" prefHeight="97.0" prefWidth="151.0" style="-fx-background-color: #0d64a1;" text="        SALES INVOICES" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="purchase" accessibleRole="TEXT_FIELD" layoutX="39.0" layoutY="117.0" prefHeight="33.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="sales" layoutX="259.0" layoutY="117.0" prefHeight="33.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="profit" layoutX="471.0" layoutY="117.0" prefHeight="33.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="cust" layoutX="39.0" layoutY="264.0" prefHeight="33.0" prefWidth="90.0" textFill="WHITE" />
+            <Label fx:id="salesinv" layoutX="259.0" layoutY="264.0" prefHeight="33.0" prefWidth="90.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

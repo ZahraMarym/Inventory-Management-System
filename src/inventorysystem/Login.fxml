@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="529.0" prefWidth="706.0" style="-fx-background-color: white; -fx-border-color: #20034d; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.LoginController">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="328.0" layoutY="57.0" prefHeight="64.0" prefWidth="362.0" text="Inventory Managment System" textFill="#20034d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="193.0" text="UserName" textFill="#20034d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="270.0" prefHeight="23.0" prefWidth="69.0" text="Password" textFill="#20034d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUser" layoutX="437.0" layoutY="186.0" prefHeight="34.0" prefWidth="213.0" />
+      <Button fx:id="btnLogin" layoutX="446.0" layoutY="353.0" mnemonicParsing="false" onAction="#Login" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #20034d;" text="Login" textFill="WHITE" />
+      <Button fx:id="btnSp" layoutX="566.0" layoutY="353.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #20034d;" text="Sign Up" textFill="WHITE" />
+      <Button fx:id="Exit" layoutX="595.0" layoutY="467.0" mnemonicParsing="false" onAction="#Exit" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #20034d;" text="Exit" textFill="WHITE" />
+      <PasswordField fx:id="txtPass" layoutX="437.0" layoutY="264.0" prefHeight="34.0" prefWidth="213.0" />
+      <ImageView fitHeight="536.0" fitWidth="400.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Login.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="457.0" layoutY="305.0" prefHeight="23.0" prefWidth="173.0" textFill="RED" />
+   </children>
+</AnchorPane>

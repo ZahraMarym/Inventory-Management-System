@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="787.0" style="-fx-background-color: #20034d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.PaymentController">
+   <children>
+      <TableView fx:id="tblPayment" layoutX="47.0" layoutY="132.0" prefHeight="472.0" prefWidth="695.0">
+        <columns>
+          <TableColumn fx:id="PayNo" prefWidth="75.0" text="PayNo" />
+          <TableColumn fx:id="OrderId" prefWidth="125.0" text="OrderId" />
+            <TableColumn fx:id="paymentAmount" prefWidth="101.0" text="paymentAmount" />
+            <TableColumn fx:id="accNo" prefWidth="152.0" text="accNo" />
+            <TableColumn fx:id="paymentDate" prefWidth="129.0" text="Remaining Amount" />
+            <TableColumn fx:id="remainingAmount" prefWidth="112.0" text="PaymentDate" />
+        </columns>
+      </TableView>
+      <Label layoutX="47.0" layoutY="23.0" prefHeight="49.0" prefWidth="180.0" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="47.0" layoutY="93.0" mnemonicParsing="false" onMouseClicked="#Add" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #19103c;" text="Add New" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtSearch" layoutX="516.0" layoutY="93.0" prefHeight="34.0" prefWidth="225.0" />
+      <Label layoutX="472.0" layoutY="93.0" prefHeight="34.0" prefWidth="44.0" text="Search" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="47.0" layoutY="612.0" mnemonicParsing="false" onAction="#refresh" prefHeight="34.0" prefWidth="101.0" style="-fx-background-color: #19103c;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
